@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    position: absolute;
+    margin: 1000px;
+    margin: 150px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-gap: 40px;
+}
+
+.container .card {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box{
+    opacity: 0.5;
+}
+
+.container .card .img-box img {
+    width: 100%;
+}
